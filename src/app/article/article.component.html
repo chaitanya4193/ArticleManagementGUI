@@ -1,0 +1,20 @@
+<div>
+	<form (submit) = "addArticle(articles)">
+		<table>
+			<label>Add new articles here</label>
+			<input type="text" #articles.title/>
+			<input type="text" #articles.category/>
+		</table>
+	</form>
+</div>
+
+<div *ngIf="showArticles">
+<table>
+  <tr><th> Id</th> <th>Title</th><th>Category</th><th></th><th>Actions</th></tr>
+  <tr *ngFor="let article of articles">
+        <td>{{articles.id}}</td> <td>{{articles.title}}</td> <td>{{articles.category}}</td>
+	<td><button type="button" (click)="editArticle(article.id)">Edit</button> </td> 
+	<td><button type="button" (click)="deleteArticle(article.articleId)">Delete</button></td>
+  </tr>
+</table> 
+</div>
