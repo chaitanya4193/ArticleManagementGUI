@@ -1,6 +1,6 @@
 # ArticleManagementGUI
 
-(INCOMPLETE)
+(Still in-progress)
 CRUD application using angular 2, This is just a UI project. For REST calls we need to connect to ArticleManagementBatch project
 
 1. Uses Angular 2 HTTP for connecting to REST services.
